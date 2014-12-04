@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     public float speed = 10f;
     public float rotspeed = 180f;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         Quaternion rot = transform.rotation;
         float z = rot.eulerAngles.z;
@@ -28,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 
         bounding();
 
-	}
+    }
 
     void bounding()
     {
